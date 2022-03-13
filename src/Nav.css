@@ -14,6 +14,10 @@ img {
     padding-right: 5em;
 }
 
+/* img:hover {
+    transform: scale(1.2%);
+} */
+
 ul {
     display: flex;
     flex-direction: row;
@@ -22,7 +26,19 @@ ul {
 
 li {
     width: 30%;
+    font-family: 'Prompt', sans-serif;
+    color: white;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: black;
+}
+
 
 .social_icons_div {
     width: 100%;
