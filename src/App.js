@@ -7,9 +7,9 @@ import { BrowserRouter, Route } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
-    <div className="App">
-      <Nav />
-      <Route exact path='/Contact' component={Contact} />    
+      <div className="App">
+        <Nav />
+        <Route exact path="/Contact" component={Contact} />
       </div>
     </BrowserRouter>
   );
