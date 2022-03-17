@@ -1,0 +1,36 @@
+.form_header{
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+}
+
+textarea.form-control {
+    width: 50%;
+    background: white;
+}
+
+.submit_btn {
+    display: flex;
+    margin-top: 1em;
+    justify-content: center;
+}
+
+button {
+    border-radius: 7px;
+    background: #29ABE2;
+    color: white;
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.error_message {
+    text-align: center;
+}   
