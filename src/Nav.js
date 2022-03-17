@@ -19,7 +19,7 @@ function Nav() {
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="/About">
               <h1>About Us</h1>
             </Link>
           </li>
