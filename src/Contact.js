@@ -1,30 +1,38 @@
 import React, { useState } from "react";
 import "./Contact.css";
+import firebase from 'firebase';
+import { db } from "./firebase";
 const Contact = () => {
   const [formState, setFormState] = useState({
     message: "",
   });
+
+  const [comment, setComment] = useState('');
 
   //destructure formState into its properties
   const { message } = formState;
   const [errorMessage, setErrorMessage] = useState("");
 
   //handleChange() will capture user keystrokes to update the formState via setFormState
-  const handleChange = (e) => {
-    //if message inuput does not have length, give error message
-    if (!e.target.value.length) {
-      setErrorMessage(`A ${e.target.name} is required.`);
-    } else {
-      setErrorMessage("");
-    }
-    setFormState({ ...formState, [e.target.name]: e.target.value });
-  };
+  // const handleChange = (e) => {
+  //   //if message inuput does not have length, give error message
+  //   if (!e.target.value.length) {
+  //     setErrorMessage(`A ${e.target.name} is required.`);
+  //   } else {
+  //     setErrorMessage("");
+  //   }
+  //   setFormState({ ...formState, [e.target.name]: e.target.value });
+  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formState);
-
+    db.collection('message').add({
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+      text: comment
+    });
     setErrorMessage(`Thank you for submitting!`);
+    setComment('');
+    console.log(comment);
   };
 
   return (
@@ -41,8 +49,9 @@ const Contact = () => {
                     name="message"
                     className="form-control"
                     rows={10}
-                    defaultValue={message}
-                    onBlur={handleChange}
+                    value={comment}
+                    // onBlur={handleChange}
+                    onChange={(e) => setComment(e.target.value)}
                   ></textarea>
                 </div>
 

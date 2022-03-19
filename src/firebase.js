@@ -1,3 +1,5 @@
+import firebase from "firebase";
+
 const firebaseApp = firebase.initializeApp({
     apiKey: "AIzaSyD6BPU1rEV2mxBLJZhd1HDOjDjGIuDp-Kw",
     authDomain: "you-are-here-podcast.firebaseapp.com",
