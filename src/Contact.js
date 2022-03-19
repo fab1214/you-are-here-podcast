@@ -3,26 +3,10 @@ import "./Contact.css";
 import firebase from 'firebase';
 import { db } from "./firebase";
 const Contact = () => {
-  const [formState, setFormState] = useState({
-    message: "",
-  });
-
   const [comment, setComment] = useState('');
 
   //destructure formState into its properties
-  const { message } = formState;
   const [errorMessage, setErrorMessage] = useState("");
-
-  //handleChange() will capture user keystrokes to update the formState via setFormState
-  // const handleChange = (e) => {
-  //   //if message inuput does not have length, give error message
-  //   if (!e.target.value.length) {
-  //     setErrorMessage(`A ${e.target.name} is required.`);
-  //   } else {
-  //     setErrorMessage("");
-  //   }
-  //   setFormState({ ...formState, [e.target.name]: e.target.value });
-  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -30,7 +14,7 @@ const Contact = () => {
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
       text: comment
     });
-    setErrorMessage(`Thank you for submitting!`);
+    setErrorMessage(`Thank you for your submission!`);
     setComment('');
     console.log(comment);
   };
@@ -39,7 +23,7 @@ const Contact = () => {
     <section>
       <div className="container">
         <h1 className="form_header">
-          Send us a question or topic you want us to discuss on the podcast!
+          Send a question or topic you would want us to discuss on a future podcast!
         </h1>
         <div className="form">
               <form onSubmit={handleSubmit}>
@@ -54,19 +38,19 @@ const Contact = () => {
                     onChange={(e) => setComment(e.target.value)}
                   ></textarea>
                 </div>
-
-                {/*conditionally render errorMessage div*/}
-                {errorMessage && (
-                  <div class="error_message">
-                    <p>{errorMessage}</p>
-                  </div>
-                )}
                 <div className="submit_btn">
                 <button type="submit">
                   Submit
                 </button>
                 </div>
               </form>
+                              {/*conditionally render errorMessage div*/}
+                {errorMessage && (
+                  <div class="error_message">
+                    <p>{errorMessage}</p>
+                  </div>
+                )}
+
             </div>
           </div>
     </section>
