@@ -46,7 +46,7 @@ const Contact = () => {
               </form>
                               {/*conditionally render errorMessage div*/}
                 {errorMessage && (
-                  <div class="error_message">
+                  <div className="error_message">
                     <p>{errorMessage}</p>
                   </div>
                 )}
