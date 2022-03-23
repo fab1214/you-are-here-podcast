@@ -14,7 +14,7 @@ const Contact = () => {
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
       text: comment
     });
-    setErrorMessage(`Thank you for your submission!`);
+    setErrorMessage(`Thank you for submitting!`);
     setComment('');
     console.log(comment);
   };
