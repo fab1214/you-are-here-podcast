@@ -7,18 +7,18 @@ function Episodes() {
 
 const [video, setVideo] = useState([]);
 
-fetch(finalURL)
-    .then((response) => response.json())
-    .then((result) => {
-        const videos = result.items.map(obj => obj.id.videoId);
-        const url="https://www.youtube.com/embed/" + videos;
-        setVideo(url);
-    })
-    .catch((error) => {
-        console.error(error);
-    });
+// fetch(finalURL)
+//     .then((response) => response.json())
+//     .then((result) => {
+//         const videos = result.items.map(obj => obj.id.videoId);
+//         const url="https://www.youtube.com/embed/" + videos;
+//         setVideo(url);
+//     })
+//     .catch((error) => {
+//         console.error(error);
+//     });
 
-    console.log(video);
+//     console.log(video);
   return (
     <div>
         <h1>Episodes</h1>
