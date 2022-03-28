@@ -10,22 +10,22 @@ function Nav() {
         <ul>
           <li>
             <Link to="/">
-              <img src={logo} />
+              <img class='logo' src={logo} />
             </Link>
           </li>
           <li>
             <Link to="/">
-              <h1>Episodes</h1>
+              <h2>Episodes</h2>
             </Link>
           </li>
           <li>
             <Link to="/About">
-              <h1>About Us</h1>
+              <h2>About Us</h2>
             </Link>
           </li>
           <li>
             <Link to="/Contact">
-              <h1>Contact Us</h1>
+              <h2>Contact Us</h2>
             </Link>
           </li>
           <li>

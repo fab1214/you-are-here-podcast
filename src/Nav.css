@@ -7,11 +7,10 @@ nav {
     width: 100%;
 }
 
-img {
+.logo {
     width: 100px;
     height: auto;
     object-fit: contain;
-    padding-right: 5em;
 }
 
 /* img:hover {
@@ -22,6 +21,7 @@ ul {
     display: flex;
     flex-direction: row;
     list-style: none;
+    align-items: center;
 }
 
 li {
@@ -45,7 +45,6 @@ a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-top: 1em;
 }
 
 .social_icon {

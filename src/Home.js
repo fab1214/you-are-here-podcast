@@ -23,7 +23,7 @@ fetch(finalURL)
   return (
     <div>
         <div className="header">
-            <h1>This week's newest video</h1>
+            <h2>This week's newest video</h2>
         </div>
         <div className="episode_container">
             <iframe width="560" height="315" src={video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
