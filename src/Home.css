@@ -10,4 +10,10 @@
 
 .view-more {
     text-align: center;
+    margin-top: 10px;
+}
+
+.view-more:hover a {
+    text-decoration: none;
+    color: white;
 }

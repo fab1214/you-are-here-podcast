@@ -5,14 +5,21 @@ const About = () => {
     return (
         <section className="dark">
             <div className="container py-4">
-                <h1 className="h1 text-center" id="pageHeaderTitle">Your hosts</h1>
+                <h1 className="h1 text-center" id="pageHeaderTitle">What we do</h1>
+                
+                <article className="postcard">
+                    <div className="postcard__text">
+                        <div className="postcard__preview-txt">Hosts Mike Nowicki and David Volino, and sometimes other guests, discuss a range of topics that revolve around the world of filmmaking and acting, while connecting certain aspects of production or a role to what we feel in everyday life.</div>
+                    </div>
+                </article>
+
 
                 <article className="postcard">
                     <img className="postcard__img" src="https://picsum.photos/1000/1000" alt="Image Title" />
                     <div className="postcard__text">
-                        <h1 className="postcard__title">Mike</h1>
+                        <h1 className="postcard__title">Mike Nowicki (DP, Editor)</h1>
                         <div className="postcard__bar"></div>
-                        <div className="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                        <div className="postcard__preview-txt">"This started with the intention of wanting to open up and have longer conversations with my friend Dave. As a result, I have gained such an appreciaition for living in the moment and sharing my most vulnerable sides with the world."</div>
                         <ul className="postcard__tagbox">
                             <li className="tag__item">
                             <a href='https://www.instagram.com/youareherepc/?hl=en'>
@@ -62,9 +69,9 @@ const About = () => {
                 <article className="postcard">
                     <img className="postcard__img" src="https://picsum.photos/501/500" alt="Image Title" />
                     <div className="postcard__text">
-                        <h1 className="postcard__title">Dave</h1>
+                        <h1 className="postcard__title">David Joseph Volino (Actor, Writer)</h1>
                         <div className="postcard__bar"></div>
-                        <div className="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                        <div className="postcard__preview-txt">"Love ya'll and please be kind to one another."</div>
                         <ul className="postcard__tagbox">
                             <li className="tag__item">
                             <a href='https://www.instagram.com/youareherepc/?hl=en'>

@@ -22,9 +22,9 @@ const Contact = () => {
   return (
     <section>
       <div className="container">
-        <h1 className="form_header">
+        <h2 className="form_header">
           Send a question or topic you would want us to discuss on a future podcast!
-        </h1>
+        </h2>
         <div className="form">
               <form onSubmit={handleSubmit}>
 
@@ -34,6 +34,7 @@ const Contact = () => {
                     className="form-control"
                     rows={10}
                     value={comment}
+                    placeholder="Enter your message here..."
                     // onBlur={handleChange}
                     onChange={(e) => setComment(e.target.value)}
                   ></textarea>
