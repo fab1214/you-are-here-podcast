@@ -22,7 +22,7 @@ const About = () => {
                         <div className="postcard__preview-txt">"This started with the intention of wanting to open up and have longer conversations with my friend Dave. As a result, I have gained such an appreciaition for living in the moment and sharing my most vulnerable sides with the world."</div>
                         <ul className="postcard__tagbox">
                             <li className="tag__item">
-                            <a href='https://www.instagram.com/youareherepc/?hl=en'>
+                            <a href='https://www.instagram.com/youareherepc/?hl=en' target="_blank" rel="noreferrer noopener">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="30"
@@ -36,7 +36,7 @@ const About = () => {
                                     </a>
                             </li>
                             <li className="tag__item">
-                                    <a href='https://www.instagram.com/youareherepc/?hl=en'>
+                                    <a href='https://www.instagram.com/youareherepc/?hl=en' target="_blank" rel="noreferrer noopener">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="30"
@@ -50,7 +50,7 @@ const About = () => {
                                     </a>
                             </li>
                             <li className="tag__item">
-                            <a href='https://www.instagram.com/youareherepc/?hl=en'>
+                            <a href='https://www.instagram.com/youareherepc/?hl=en' target="_blank" rel="noreferrer noopener">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="30"
@@ -74,7 +74,7 @@ const About = () => {
                         <div className="postcard__preview-txt">"Love ya'll and please be kind to one another."</div>
                         <ul className="postcard__tagbox">
                             <li className="tag__item">
-                            <a href='https://www.instagram.com/youareherepc/?hl=en'>
+                            <a href='https://www.instagram.com/youareherepc/?hl=en' target="_blank" rel="noreferrer noopener">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="30"
@@ -88,7 +88,7 @@ const About = () => {
                                     </a>
                             </li>
                             <li className="tag__item">
-                            <a href='https://www.instagram.com/youareherepc/?hl=en'>
+                            <a href='https://www.instagram.com/youareherepc/?hl=en' target="_blank" rel="noreferrer noopener">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="30"
@@ -102,7 +102,7 @@ const About = () => {
                                     </a>
                             </li>
                             <li className="tag__item">
-                            <a href='https://www.instagram.com/youareherepc/?hl=en'>
+                            <a href='https://www.instagram.com/youareherepc/?hl=en' target="_blank" rel="noreferrer noopener">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="30"

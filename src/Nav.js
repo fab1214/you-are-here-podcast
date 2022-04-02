@@ -31,7 +31,7 @@ function Nav() {
           <li>
             <div className="social_icons_div">
               <div className="social_icon">
-                <a href='https://www.youtube.com/channel/UCyUWgAVvyA0_RU0XZ2qON7A'>
+                <a href='https://www.youtube.com/channel/UCyUWgAVvyA0_RU0XZ2qON7A' target="_blank" rel="noreferrer noopener">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
@@ -46,7 +46,7 @@ function Nav() {
               </div>
 
               <div className="social_icon">
-                <a href='https://open.spotify.com/show/3gV0ZRTtkiFjGGLWuCupWZ'>
+                <a href='https://open.spotify.com/show/3gV0ZRTtkiFjGGLWuCupWZ' target="_blank" rel="noreferrer noopener">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
@@ -61,7 +61,7 @@ function Nav() {
               </div>
 
               <div className="social_icon">
-                <a href='https://podcasts.apple.com/us/podcast/you-are-here-podcast/id1451676243'>
+                <a href='https://podcasts.apple.com/us/podcast/you-are-here-podcast/id1451676243' target="_blank" rel="noreferrer noopener">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"
@@ -76,7 +76,7 @@ function Nav() {
               </div>
 
               <div className="social_icon">
-                <a href='https://www.instagram.com/youareherepc/?hl=en'>
+                <a href='https://www.instagram.com/youareherepc/?hl=en' target="_blank" rel="noreferrer noopener">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="30"

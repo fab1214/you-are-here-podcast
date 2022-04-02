@@ -29,7 +29,7 @@ fetch(finalURL)
             <iframe width="560" height="315" src={video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div className="view-more">
-                <button><a href='https://www.youtube.com/channel/UCyUWgAVvyA0_RU0XZ2qON7A'>View more</a></button>
+                <button><a href='https://www.youtube.com/channel/UCyUWgAVvyA0_RU0XZ2qON7A' target="_blank" rel="noreferrer noopener">View more</a></button>
         </div>
     </div>
 )
