@@ -1,8 +1,7 @@
 // import React, { useState } from "react";
-// const API = "AIzaSyAcGCqx0kg5Xk0_qFOVULEa7y5ACp5tlNA";
 // const channelID = "UCyUWgAVvyA0_RU0XZ2qON7A";
 // const result = "10";
-// const finalURL = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelID}&maxResults=${result}&order=date&key=${API}`;
+// const finalURL = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelID}&maxResults=${result}&order=date&key=${process.env.REACT_APP_API_KEY}`;
 // function Episodes() {
 //   const [videos, setVideos] = useState([]);
 
