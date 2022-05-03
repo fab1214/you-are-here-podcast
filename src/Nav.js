@@ -14,15 +14,17 @@ function Nav() {
             </Link>
           </li>
           <li>
-            <Link to="/">
+            {/* <Link to="/"> */}
+            <a href="https://www.youtube.com/channel/UCyUWgAVvyA0_RU0XZ2qON7A" target="_blank">
               <h2>Episodes</h2>
-            </Link>
+              </a>
+            {/* </Link> */}
           </li>
-          <li>
+          {/* <li>
             <Link to="/About">
               <h2>About Us</h2>
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/Contact">
               <h2>Contact Us</h2>
