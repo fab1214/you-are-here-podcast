@@ -1,0 +1,30 @@
+.header {
+    text-align: center;
+    margin: 2em 0;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.episodes_container {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.video_container {
+    width: 300px;
+}
+
+.view-more {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.view-more:hover a {
+    text-decoration: none;
+    color: white;
+}

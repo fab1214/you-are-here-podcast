@@ -21,7 +21,7 @@ const Contact = () => {
 
   return (
     <section>
-      <div className="container">
+      <div className="form_container">
         <h2 className="form_header">
           Send a question or topic you would want us to discuss on a future podcast!
         </h2>

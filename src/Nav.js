@@ -14,11 +14,11 @@ function Nav() {
             </Link>
           </li>
           <li>
-            {/* <Link to="/"> */}
-            <a href="https://www.youtube.com/channel/UCyUWgAVvyA0_RU0XZ2qON7A" target="_blank">
+            <Link to="/Episodes">
+            {/* <a href="https://www.youtube.com/channel/UCyUWgAVvyA0_RU0XZ2qON7A" target="_blank"> */}
               <h2>Episodes</h2>
-              </a>
-            {/* </Link> */}
+              {/* </a> */}
+            </Link>
           </li>
           {/* <li>
             <Link to="/About">
@@ -32,6 +32,11 @@ function Nav() {
           </li>
           <li>
             <div className="social_icons_div">
+              <div className="social_icon">
+                <a href='https://www.patreon.com/youareherepod' target="_blank" rel="noreferrer noopener">
+                <i className='fab fa-patreon'></i>
+                </a>
+              </div>
               <div className="social_icon">
                 <a href='https://www.youtube.com/channel/UCyUWgAVvyA0_RU0XZ2qON7A' target="_blank" rel="noreferrer noopener">
                   <svg

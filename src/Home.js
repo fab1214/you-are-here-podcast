@@ -11,7 +11,6 @@ function Home() {
 
   const getVideos = () => {
     axios.get(finalURL).then((response) => {
-      console.log(response);
       const ids = response.data.items.map((obj) => obj.id.videoId);
       const prefix = "https://www.youtube.com/embed/";
       const url = ids.map((id) => prefix + id);
@@ -22,18 +21,18 @@ function Home() {
 
   useEffect(() => getVideos(), []);
 
-  // fetch(finalURL)
-  //   .then((response) => response.json())
-  //   .then((result) => {
-  //     const ids = result.items.map((obj) => obj.id.videoId);
-  //     const prefix = "https://www.youtube.com/embed/";
-  //     const url = ids.map((id) => prefix + id);
-  //     setVideos(url);
-  //     console.log(url);
-  //   })
-  //   .catch((error) => {
-  //     console.error(error);
-  //   });
+  fetch(finalURL)
+    .then((response) => response.json())
+    .then((result) => {
+      const ids = result.items.map((obj) => obj.id.videoId);
+      const prefix = "https://www.youtube.com/embed/";
+      const url = ids.map((id) => prefix + id);
+      setVideos(url);
+      console.log(url);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
 
   return (
     <div>
@@ -42,7 +41,7 @@ function Home() {
       </div>
       {videos.map((video) => {
         return (
-          <div className="episode container">
+          <div className="episode_container">
             <iframe
               width="560"
               height="315"
@@ -54,21 +53,7 @@ function Home() {
             ></iframe>
           </div>
         );
-      })};
-      {/* {Array.from(videos).forEach((video) => {
-        console.log(video);
-        <div className="episode_container">
-          <iframe
-            width="560"
-            height="315"
-            src={videos}
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>;
-      })} */}
+      })}
       <div className="view-more">
         <button>
           <a
