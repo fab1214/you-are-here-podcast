@@ -4,8 +4,9 @@
 }
 
 .header {
-    text-align: center;
-    margin: 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     color: white;
 }
 
@@ -93,7 +94,7 @@
         font-size: 20px;
     }
 
-    svg.bi {
+    svg.bi, svg.svg-inline--fa.fa-patreon.fa-w-16 {
         width: 20px !important;
     }
 
@@ -111,7 +112,7 @@
 
     ul {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     li {
@@ -129,10 +130,15 @@
 
     .social_icon {
         width: auto;
-        margin-right: 25px;
+        margin-right: 15px;
     }
 
     .header h2 {
         font-size: 24px;
+    }
+
+    iframe {
+        width: 370px;
+        height: 200px;
     }
 }

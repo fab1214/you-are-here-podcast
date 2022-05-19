@@ -21,19 +21,6 @@ function Home() {
 
   useEffect(() => getVideos(), []);
 
-  fetch(finalURL)
-    .then((response) => response.json())
-    .then((result) => {
-      const ids = result.items.map((obj) => obj.id.videoId);
-      const prefix = "https://www.youtube.com/embed/";
-      const url = ids.map((id) => prefix + id);
-      setVideos(url);
-      console.log(url);
-    })
-    .catch((error) => {
-      console.error(error);
-    });
-
   return (
     <div>
       <div className="header">

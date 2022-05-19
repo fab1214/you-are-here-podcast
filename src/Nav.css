@@ -51,3 +51,12 @@ i.fab.fa-patreon {
 .social_icon {
     width: 20%;
 }
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 2em !important;
+    width: 2em !important;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
