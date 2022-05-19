@@ -16,8 +16,7 @@
 }
 
 .video_container {
-    width: -webkit-fill-available;
-    height: -webkit-fill-available;
+    width: 300px;
 }
 
 .view-more {
@@ -30,6 +29,19 @@
     color: white;
 }
 
+@media screen and (max-width:991px) {
+    .video_container {
+        height: 110px;
+        width: 220px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .video_container {
+        height: 110px;
+        width: 160px;
+    }
+}
 @media screen and (max-width: 600px){
     .container {
         flex-direction: column;
@@ -38,6 +50,11 @@
 
     .episodes_container {
         width: unset;
+    }
+
+    .video_container {
+        height: 200px;
+        width: 355px;
     }
 }
 

@@ -18,7 +18,7 @@
 }
 
 .form {
-    margin-top: 25px;
+    margin: 25px 0;
 }
 textarea.form-control {
     width: 50%;
