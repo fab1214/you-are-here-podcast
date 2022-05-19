@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import useLocalStorage from "./hooks/useLocalStorage";
+
 import axios from "axios";
 import "./Episodes.css";
 
@@ -7,7 +9,7 @@ const result = "9";
 const finalURL = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelID}&maxResults=${result}&order=date&key=${process.env.REACT_APP_API_KEY}`;
 
 function Home() {
-  const [videos, setVideos] = useState([]);
+  const [videos, setVideos] = useLocalStorage('videos',[]);
 
   const getVideos = () => {
     axios.get(finalURL).then((response) => {
